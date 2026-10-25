@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">캐리어 안착 및 witness coupon 개념 배치도</title>
+  <desc id="desc">캐리어, 위치결정핀, 안착 확인점, 네 개의 witness coupon, 좌표 원점, 고정 측정점과 체크리스트 기록 흐름을 나타낸 개념도</desc>
+  <defs>
+    <style>
+      .title { font: 700 30px Arial, sans-serif; fill: #111418; }
+      .subtitle { font: 16px Arial, sans-serif; fill: #737D86; }
+      .label { font: 700 16px Arial, sans-serif; fill: #111418; }
+      .body { font: 18px Arial, sans-serif; fill: #2A2F36; }
+      .small { font: 16px Arial, sans-serif; fill: #737D86; }
+      .panel { fill: #FAFCFB; stroke: #D0D5D9; stroke-width: 2; }
+      .carrier { fill: #E9F4F2; stroke: #111418; stroke-width: 4; }
+      .coupon { fill: #fff2cc; stroke: #b7791f; stroke-width: 2; }
+      .pin { fill: #D7EEEA; stroke: #007F79; stroke-width: 2; }
+      .point { fill: #D7EEEA; stroke: #007F79; stroke-width: 2; }
+      .arrow { stroke: #737D86; stroke-width: 2; marker-end: url(#arrowhead); }
+      .dash { stroke: #A4B8B4; stroke-width: 2; stroke-dasharray: 8 7; fill: none; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#737D86"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="720" fill="#ffffff"/>
+  <text x="60" y="58" class="title">캐리어 안착 및 Witness Coupon 개념 배치도</text>
+  <text x="60" y="88" class="subtitle">실제 치수 도면이 아니라 ID, 좌표, 방향, 안착 상태와 측정점을 같은 실행 번호로 연결하는 기록 구조다.</text>
+
+  <rect x="55" y="125" width="770" height="525" rx="18" class="panel"/>
+  <text x="85" y="162" class="label">캐리어 상면 개념도</text>
+
+  <rect x="135" y="195" width="610" height="385" rx="24" class="carrier"/>
+  <text x="405" y="225" class="label">Carrier ID</text>
+
+  <circle cx="170" cy="230" r="15" class="pin"/>
+  <circle cx="710" cy="230" r="15" class="pin"/>
+  <text x="105" y="195" class="small">위치결정핀 P1</text>
+  <text x="660" y="195" class="small">위치결정핀 P2</text>
+
+  <path d="M185 550 h70" class="arrow"/>
+  <path d="M185 550 v-70" class="arrow"/>
+  <text x="263" y="556" class="small">+X</text>
+  <text x="167" y="472" class="small">+Y</text>
+  <text x="145" y="574" class="small">좌표 원점</text>
+
+  <g>
+    <rect x="245" y="285" width="78" height="50" rx="6" class="coupon"/>
+    <text x="264" y="316" class="body">CP-01</text>
+    <path d="M284 275 v-28" class="arrow"/>
+
+    <rect x="555" y="285" width="78" height="50" rx="6" class="coupon"/>
+    <text x="574" y="316" class="body">CP-02</text>
+    <path d="M594 275 v-28" class="arrow"/>
+
+    <rect x="245" y="445" width="78" height="50" rx="6" class="coupon"/>
+    <text x="264" y="476" class="body">CP-03</text>
+    <path d="M284 435 v-28" class="arrow"/>
+
+    <rect x="555" y="445" width="78" height="50" rx="6" class="coupon"/>
+    <text x="574" y="476" class="body">CP-04</text>
+    <path d="M594 435 v-28" class="arrow"/>
+  </g>
+
+  <g>
+    <circle cx="390" cy="310" r="12" class="point"/>
+    <circle cx="440" cy="310" r="12" class="point"/>
+    <circle cx="390" cy="470" r="12" class="point"/>
+    <circle cx="440" cy="470" r="12" class="point"/>
+    <text x="370" y="390" class="body">고정 측정점 M1-M4</text>
+    <path d="M416 370 v-42" class="dash"/>
+    <path d="M416 405 v48" class="dash"/>
+  </g>
+
+  <circle cx="205" cy="385" r="13" class="point"/>
+  <circle cx="675" cy="385" r="13" class="point"/>
+  <text x="155" y="418" class="small">안착 확인점 S1</text>
+  <text x="625" y="418" class="small">안착 확인점 S2</text>
+
+  <rect x="855" y="125" width="290" height="525" rx="18" class="panel"/>
+  <text x="885" y="165" class="label">체크리스트 기록 흐름</text>
+
+  <g class="body">
+    <rect x="885" y="195" width="230" height="58" rx="9" fill="#E9F4F2" stroke="#A4B8B4"/>
+    <text x="905" y="220">1. 실행·Pair·Block ID</text>
+    <text x="905" y="242" class="small">A/B 및 실행 순서 연결</text>
+
+    <path d="M1000 255 v26" class="arrow"/>
+    <rect x="885" y="285" width="230" height="58" rx="9" fill="#E9F4F2" stroke="#A4B8B4"/>
+    <text x="905" y="310">2. 캐리어 안착 확인</text>
+    <text x="905" y="332" class="small">핀·접촉면·확인점</text>
+
+    <path d="M1000 345 v26" class="arrow"/>
+    <rect x="885" y="375" width="230" height="58" rx="9" fill="#fff2cc" stroke="#b7791f"/>
+    <text x="905" y="400">3. 쿠폰 배치 기록</text>
+    <text x="905" y="422" class="small">ID·X/Y·방향</text>
+
+    <path d="M1000 435 v26" class="arrow"/>
+    <rect x="885" y="465" width="230" height="58" rx="9" fill="#E9F4F2" stroke="#A4B8B4"/>
+    <text x="905" y="490">4. 고정점 두께 측정</text>
+    <text x="905" y="512" class="small">같은 측정점·도구 사용</text>
+
+    <path d="M1000 525 v26" class="arrow"/>
+    <rect x="885" y="555" width="230" height="66" rx="9" fill="#D7EEEA" stroke="#007F79"/>
+    <text x="905" y="580">5. 오류·재작업·범위</text>
+    <text x="905" y="602" class="small">A/B 비교와 후속 검증</text>
+  </g>
+
+  <text x="60" y="690" class="small">기록 기준: 실제 원점, 쿠폰 수, 측정점과 접촉 금지 부위는 승인된 도면·작업 절차에 맞춰 입력한다.</text>
+</svg>

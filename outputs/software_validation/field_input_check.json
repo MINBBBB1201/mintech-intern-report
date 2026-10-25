@@ -1,0 +1,10 @@
+{
+  "evidence_status": "FIELD_MEASUREMENT",
+  "record_count": 0,
+  "accepted_pair_count": 0,
+  "issue_count": 0,
+  "status": "EMPTY",
+  "issues": [],
+  "pairs": [],
+  "provenance_limit": "CSV labels do not authenticate observations; source records require review."
+}

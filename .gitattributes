@@ -8,3 +8,4 @@
 *.csv -text
 *.pdf binary
 *.ttf binary
+assets/fonts/OFL.txt -text -whitespace

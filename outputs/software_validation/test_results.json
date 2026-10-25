@@ -1,0 +1,744 @@
+{
+  "evidence_status": "SOFTWARE_TEST",
+  "executed_at_utc": "2026-10-25T08:18:53.056512+00:00",
+  "fixture_date_meaning": "2000-01-01 is a fixed test constant, not an internship date.",
+  "validator_sha256": "5ea208554858a7ed6193632c03ee69ace17543a962bc76dca1a7ae5d635c0355",
+  "verification_script_sha256": "ff82f680005797028601202991a8c7a672699d39af1442bb1d73865576cecc5f",
+  "case_count": 55,
+  "passed": 55,
+  "failed": 0,
+  "cases": [
+    {
+      "case_id": "valid_AB_and_BA",
+      "passed": true,
+      "expected_issue_codes": [],
+      "actual_issue_codes": [],
+      "expected_pairs": 2,
+      "actual_pairs": 2,
+      "record_count": 12
+    },
+    {
+      "case_id": "empty_is_not_a_measured_zero",
+      "passed": true,
+      "expected_issue_codes": [],
+      "actual_issue_codes": [],
+      "expected_pairs": 0,
+      "actual_pairs": 0,
+      "record_count": 0
+    },
+    {
+      "case_id": "optional_notes_blank",
+      "passed": true,
+      "expected_issue_codes": [],
+      "actual_issue_codes": [],
+      "expected_pairs": 1,
+      "actual_pairs": 1,
+      "record_count": 6
+    },
+    {
+      "case_id": "missing_record_id",
+      "passed": true,
+      "expected_issue_codes": [
+        "MISSING_FIELD"
+      ],
+      "actual_issue_codes": [
+        "MISSING_FIELD"
+      ],
+      "expected_pairs": 0,
+      "actual_pairs": 0,
+      "record_count": 6
+    },
+    {
+      "case_id": "missing_date",
+      "passed": true,
+      "expected_issue_codes": [
+        "MISSING_FIELD"
+      ],
+      "actual_issue_codes": [
+        "MISSING_FIELD",
+        "RUN_CONSISTENCY"
+      ],
+      "expected_pairs": 0,
+      "actual_pairs": 0,
+      "record_count": 6
+    },
+    {
+      "case_id": "missing_method",
+      "passed": true,
+      "expected_issue_codes": [
+        "MISSING_FIELD"
+      ],
+      "actual_issue_codes": [
+        "MISSING_FIELD",
+        "POINT_SET"
+      ],
+      "expected_pairs": 0,
+      "actual_pairs": 0,
+      "record_count": 6
+    },
+    {
+      "case_id": "missing_run_order",
+      "passed": true,
+      "expected_issue_codes": [
+        "MISSING_FIELD"
+      ],
+      "actual_issue_codes": [
+        "MISSING_FIELD",
+        "RUN_CONSISTENCY"
+      ],
+      "expected_pairs": 0,
+      "actual_pairs": 0,
+      "record_count": 6
+    },
+    {
+      "case_id": "missing_block_id",
+      "passed": true,
+      "expected_issue_codes": [
+        "MISSING_FIELD"
+      ],
+      "actual_issue_codes": [
+        "MISSING_FIELD",
+        "PAIR_CONDITION"
+      ],
+      "expected_pairs": 0,
+      "actual_pairs": 0,
+      "record_count": 6
+    },
+    {
+      "case_id": "missing_pair_id",
+      "passed": true,
+      "expected_issue_codes": [
+        "MISSING_FIELD"
+      ],
+      "actual_issue_codes": [
+        "MISSING_FIELD",
+        "POINT_SET"
+      ],
+      "expected_pairs": 0,
+      "actual_pairs": 0,
+      "record_count": 6
+    },
+    {
+      "case_id": "missing_carrier_id",
+      "passed": true,
+      "expected_issue_codes": [
+        "MISSING_FIELD"
+      ],
+      "actual_issue_codes": [
+        "MISSING_FIELD",
+        "RUN_CONSISTENCY"
+      ],
+      "expected_pairs": 0,
+      "actual_pairs": 0,
+      "record_count": 6
+    },
+    {
+      "case_id": "missing_carrier_seating_check",
+      "passed": true,
+      "expected_issue_codes": [
+        "MISSING_FIELD"
+      ],
+      "actual_issue_codes": [
+        "MISSING_FIELD",
+        "RUN_CONSISTENCY"
+      ],
+      "expected_pairs": 0,
+      "actual_pairs": 0,
+      "record_count": 6
+    },
+    {
+      "case_id": "missing_carrier_pin_check",
+      "passed": true,
+      "expected_issue_codes": [
+        "MISSING_FIELD"
+      ],
+      "actual_issue_codes": [
+        "MISSING_FIELD",
+        "RUN_CONSISTENCY"
+      ],
+      "expected_pairs": 0,
+      "actual_pairs": 0,
+      "record_count": 6
+    },
+    {
+      "case_id": "missing_carrier_surface_check",
+      "passed": true,
+      "expected_issue_codes": [
+        "MISSING_FIELD"
+      ],
+      "actual_issue_codes": [
+        "MISSING_FIELD",
+        "RUN_CONSISTENCY"
+      ],
+      "expected_pairs": 0,
+      "actual_pairs": 0,
+      "record_count": 6
+    },
+    {
+      "case_id": "missing_carrier_seating_error_count",
+      "passed": true,
+      "expected_issue_codes": [
+        "MISSING_FIELD"
+      ],
+      "actual_issue_codes": [
+        "MISSING_FIELD",
+        "RUN_CONSISTENCY"
+      ],
+      "expected_pairs": 0,
+      "actual_pairs": 0,
+      "record_count": 6
+    },
+    {
+      "case_id": "missing_preparation_error_count",
+      "passed": true,
+      "expected_issue_codes": [
+        "MISSING_FIELD"
+      ],
+      "actual_issue_codes": [
+        "MISSING_FIELD",
+        "RUN_CONSISTENCY"
+      ],
+      "expected_pairs": 0,
+      "actual_pairs": 0,
+      "record_count": 6
+    },
+    {
+      "case_id": "missing_rework_count",
+      "passed": true,
+      "expected_issue_codes": [
+        "MISSING_FIELD"
+      ],
+      "actual_issue_codes": [
+        "MISSING_FIELD",
+        "RUN_CONSISTENCY"
+      ],
+      "expected_pairs": 0,
+      "actual_pairs": 0,
+      "record_count": 6
+    },
+    {
+      "case_id": "missing_recipe_id",
+      "passed": true,
+      "expected_issue_codes": [
+        "MISSING_FIELD"
+      ],
+      "actual_issue_codes": [
+        "MISSING_FIELD",
+        "PAIR_CONDITION"
+      ],
+      "expected_pairs": 0,
+      "actual_pairs": 0,
+      "record_count": 6
+    },
+    {
+      "case_id": "missing_coupon_id",
+      "passed": true,
+      "expected_issue_codes": [
+        "MISSING_FIELD"
+      ],
+      "actual_issue_codes": [
+        "MISSING_FIELD",
+        "RUN_CONSISTENCY"
+      ],
+      "expected_pairs": 0,
+      "actual_pairs": 0,
+      "record_count": 6
+    },
+    {
+      "case_id": "missing_coupon_x_mm",
+      "passed": true,
+      "expected_issue_codes": [
+        "MISSING_FIELD"
+      ],
+      "actual_issue_codes": [
+        "MISSING_FIELD",
+        "RUN_CONSISTENCY"
+      ],
+      "expected_pairs": 0,
+      "actual_pairs": 0,
+      "record_count": 6
+    },
+    {
+      "case_id": "missing_coupon_y_mm",
+      "passed": true,
+      "expected_issue_codes": [
+        "MISSING_FIELD"
+      ],
+      "actual_issue_codes": [
+        "MISSING_FIELD",
+        "RUN_CONSISTENCY"
+      ],
+      "expected_pairs": 0,
+      "actual_pairs": 0,
+      "record_count": 6
+    },
+    {
+      "case_id": "missing_coupon_orientation_deg",
+      "passed": true,
+      "expected_issue_codes": [
+        "MISSING_FIELD"
+      ],
+      "actual_issue_codes": [
+        "MISSING_FIELD",
+        "RUN_CONSISTENCY"
+      ],
+      "expected_pairs": 0,
+      "actual_pairs": 0,
+      "record_count": 6
+    },
+    {
+      "case_id": "missing_coupon_position_error_count",
+      "passed": true,
+      "expected_issue_codes": [
+        "MISSING_FIELD"
+      ],
+      "actual_issue_codes": [
+        "MISSING_FIELD",
+        "RUN_CONSISTENCY"
+      ],
+      "expected_pairs": 0,
+      "actual_pairs": 0,
+      "record_count": 6
+    },
+    {
+      "case_id": "missing_coupon_orientation_error_count",
+      "passed": true,
+      "expected_issue_codes": [
+        "MISSING_FIELD"
+      ],
+      "actual_issue_codes": [
+        "MISSING_FIELD",
+        "RUN_CONSISTENCY"
+      ],
+      "expected_pairs": 0,
+      "actual_pairs": 0,
+      "record_count": 6
+    },
+    {
+      "case_id": "missing_measurement_tool",
+      "passed": true,
+      "expected_issue_codes": [
+        "MISSING_FIELD"
+      ],
+      "actual_issue_codes": [
+        "MISSING_FIELD",
+        "PAIR_CONDITION"
+      ],
+      "expected_pairs": 0,
+      "actual_pairs": 0,
+      "record_count": 6
+    },
+    {
+      "case_id": "missing_measurement_point",
+      "passed": true,
+      "expected_issue_codes": [
+        "MISSING_FIELD"
+      ],
+      "actual_issue_codes": [
+        "MISSING_FIELD",
+        "POINT_SET"
+      ],
+      "expected_pairs": 0,
+      "actual_pairs": 0,
+      "record_count": 6
+    },
+    {
+      "case_id": "missing_thickness_nm",
+      "passed": true,
+      "expected_issue_codes": [
+        "MISSING_FIELD"
+      ],
+      "actual_issue_codes": [
+        "MISSING_FIELD"
+      ],
+      "expected_pairs": 0,
+      "actual_pairs": 0,
+      "record_count": 6
+    },
+    {
+      "case_id": "missing_measured_by",
+      "passed": true,
+      "expected_issue_codes": [
+        "MISSING_FIELD"
+      ],
+      "actual_issue_codes": [
+        "MISSING_FIELD"
+      ],
+      "expected_pairs": 0,
+      "actual_pairs": 0,
+      "record_count": 6
+    },
+    {
+      "case_id": "missing_evidence_status",
+      "passed": true,
+      "expected_issue_codes": [
+        "MISSING_FIELD"
+      ],
+      "actual_issue_codes": [
+        "MISSING_FIELD"
+      ],
+      "expected_pairs": 0,
+      "actual_pairs": 0,
+      "record_count": 6
+    },
+    {
+      "case_id": "duplicate_id",
+      "passed": true,
+      "expected_issue_codes": [
+        "DUPLICATE_ID"
+      ],
+      "actual_issue_codes": [
+        "DUPLICATE_ID"
+      ],
+      "expected_pairs": 0,
+      "actual_pairs": 0,
+      "record_count": 6
+    },
+    {
+      "case_id": "invalid_date",
+      "passed": true,
+      "expected_issue_codes": [
+        "DATE"
+      ],
+      "actual_issue_codes": [
+        "DATE",
+        "RUN_CONSISTENCY"
+      ],
+      "expected_pairs": 0,
+      "actual_pairs": 0,
+      "record_count": 6
+    },
+    {
+      "case_id": "unknown_method",
+      "passed": true,
+      "expected_issue_codes": [
+        "METHOD"
+      ],
+      "actual_issue_codes": [
+        "METHOD",
+        "POINT_SET"
+      ],
+      "expected_pairs": 0,
+      "actual_pairs": 0,
+      "record_count": 6
+    },
+    {
+      "case_id": "invalid_order",
+      "passed": true,
+      "expected_issue_codes": [
+        "ORDER"
+      ],
+      "actual_issue_codes": [
+        "ORDER",
+        "RUN_CONSISTENCY"
+      ],
+      "expected_pairs": 0,
+      "actual_pairs": 0,
+      "record_count": 6
+    },
+    {
+      "case_id": "unknown_check",
+      "passed": true,
+      "expected_issue_codes": [
+        "CHECK_VALUE"
+      ],
+      "actual_issue_codes": [
+        "CHECK_VALUE",
+        "RUN_CONSISTENCY"
+      ],
+      "expected_pairs": 0,
+      "actual_pairs": 0,
+      "record_count": 6
+    },
+    {
+      "case_id": "negative_count",
+      "passed": true,
+      "expected_issue_codes": [
+        "COUNT"
+      ],
+      "actual_issue_codes": [
+        "COUNT",
+        "RUN_CONSISTENCY"
+      ],
+      "expected_pairs": 0,
+      "actual_pairs": 0,
+      "record_count": 6
+    },
+    {
+      "case_id": "fractional_count",
+      "passed": true,
+      "expected_issue_codes": [
+        "COUNT"
+      ],
+      "actual_issue_codes": [
+        "COUNT",
+        "RUN_CONSISTENCY"
+      ],
+      "expected_pairs": 0,
+      "actual_pairs": 0,
+      "record_count": 6
+    },
+    {
+      "case_id": "text_count",
+      "passed": true,
+      "expected_issue_codes": [
+        "COUNT"
+      ],
+      "actual_issue_codes": [
+        "COUNT",
+        "RUN_CONSISTENCY"
+      ],
+      "expected_pairs": 0,
+      "actual_pairs": 0,
+      "record_count": 6
+    },
+    {
+      "case_id": "negative_thickness",
+      "passed": true,
+      "expected_issue_codes": [
+        "MEASUREMENT"
+      ],
+      "actual_issue_codes": [
+        "MEASUREMENT"
+      ],
+      "expected_pairs": 0,
+      "actual_pairs": 0,
+      "record_count": 6
+    },
+    {
+      "case_id": "nonfinite_thickness",
+      "passed": true,
+      "expected_issue_codes": [
+        "MEASUREMENT"
+      ],
+      "actual_issue_codes": [
+        "MEASUREMENT"
+      ],
+      "expected_pairs": 0,
+      "actual_pairs": 0,
+      "record_count": 6
+    },
+    {
+      "case_id": "infinite_thickness",
+      "passed": true,
+      "expected_issue_codes": [
+        "MEASUREMENT"
+      ],
+      "actual_issue_codes": [
+        "MEASUREMENT"
+      ],
+      "expected_pairs": 0,
+      "actual_pairs": 0,
+      "record_count": 6
+    },
+    {
+      "case_id": "negative_coordinate",
+      "passed": true,
+      "expected_issue_codes": [
+        "MEASUREMENT"
+      ],
+      "actual_issue_codes": [
+        "MEASUREMENT",
+        "RUN_CONSISTENCY"
+      ],
+      "expected_pairs": 0,
+      "actual_pairs": 0,
+      "record_count": 6
+    },
+    {
+      "case_id": "orientation_360",
+      "passed": true,
+      "expected_issue_codes": [
+        "ORIENTATION"
+      ],
+      "actual_issue_codes": [
+        "ORIENTATION",
+        "RUN_CONSISTENCY"
+      ],
+      "expected_pairs": 0,
+      "actual_pairs": 0,
+      "record_count": 6
+    },
+    {
+      "case_id": "literature_cannot_enter",
+      "passed": true,
+      "expected_issue_codes": [
+        "EVIDENCE_CATEGORY"
+      ],
+      "actual_issue_codes": [
+        "EVIDENCE_CATEGORY"
+      ],
+      "expected_pairs": 0,
+      "actual_pairs": 0,
+      "record_count": 6
+    },
+    {
+      "case_id": "reconstruction_cannot_enter",
+      "passed": true,
+      "expected_issue_codes": [
+        "EVIDENCE_CATEGORY"
+      ],
+      "actual_issue_codes": [
+        "EVIDENCE_CATEGORY"
+      ],
+      "expected_pairs": 0,
+      "actual_pairs": 0,
+      "record_count": 6
+    },
+    {
+      "case_id": "block_mismatch",
+      "passed": true,
+      "expected_issue_codes": [
+        "PAIR_CONDITION"
+      ],
+      "actual_issue_codes": [
+        "PAIR_CONDITION"
+      ],
+      "expected_pairs": 0,
+      "actual_pairs": 0,
+      "record_count": 6
+    },
+    {
+      "case_id": "recipe_mismatch",
+      "passed": true,
+      "expected_issue_codes": [
+        "PAIR_CONDITION"
+      ],
+      "actual_issue_codes": [
+        "PAIR_CONDITION"
+      ],
+      "expected_pairs": 0,
+      "actual_pairs": 0,
+      "record_count": 6
+    },
+    {
+      "case_id": "tool_mismatch",
+      "passed": true,
+      "expected_issue_codes": [
+        "PAIR_CONDITION"
+      ],
+      "actual_issue_codes": [
+        "PAIR_CONDITION"
+      ],
+      "expected_pairs": 0,
+      "actual_pairs": 0,
+      "record_count": 6
+    },
+    {
+      "case_id": "carrier_changes_within_run",
+      "passed": true,
+      "expected_issue_codes": [
+        "RUN_CONSISTENCY"
+      ],
+      "actual_issue_codes": [
+        "RUN_CONSISTENCY"
+      ],
+      "expected_pairs": 0,
+      "actual_pairs": 0,
+      "record_count": 6
+    },
+    {
+      "case_id": "counts_change_within_run",
+      "passed": true,
+      "expected_issue_codes": [
+        "RUN_CONSISTENCY"
+      ],
+      "actual_issue_codes": [
+        "RUN_CONSISTENCY"
+      ],
+      "expected_pairs": 0,
+      "actual_pairs": 0,
+      "record_count": 6
+    },
+    {
+      "case_id": "measurement_point_mismatch",
+      "passed": true,
+      "expected_issue_codes": [
+        "POINT_SET"
+      ],
+      "actual_issue_codes": [
+        "POINT_SET"
+      ],
+      "expected_pairs": 0,
+      "actual_pairs": 0,
+      "record_count": 6
+    },
+    {
+      "case_id": "repeat_requires_review",
+      "passed": true,
+      "expected_issue_codes": [
+        "REPEATED_POINT_REVIEW"
+      ],
+      "actual_issue_codes": [
+        "POINT_SET",
+        "REPEATED_POINT_REVIEW"
+      ],
+      "expected_pairs": 0,
+      "actual_pairs": 0,
+      "record_count": 6
+    },
+    {
+      "case_id": "same_AB_order",
+      "passed": true,
+      "expected_issue_codes": [
+        "PAIR_ORDER"
+      ],
+      "actual_issue_codes": [
+        "PAIR_ORDER"
+      ],
+      "expected_pairs": 0,
+      "actual_pairs": 0,
+      "record_count": 6
+    },
+    {
+      "case_id": "missing_B",
+      "passed": true,
+      "expected_issue_codes": [
+        "MISSING_METHOD"
+      ],
+      "actual_issue_codes": [
+        "MISSING_METHOD"
+      ],
+      "expected_pairs": 0,
+      "actual_pairs": 0,
+      "record_count": 3
+    },
+    {
+      "case_id": "single_point_cannot_define_range",
+      "passed": true,
+      "expected_issue_codes": [
+        "POINT_COUNT"
+      ],
+      "actual_issue_codes": [
+        "POINT_COUNT"
+      ],
+      "expected_pairs": 0,
+      "actual_pairs": 0,
+      "record_count": 2
+    },
+    {
+      "case_id": "software_fixture_excluded_from_field",
+      "passed": true,
+      "expected_issue_codes": [
+        "EVIDENCE_CATEGORY"
+      ],
+      "actual_issue_codes": [
+        "EVIDENCE_CATEGORY"
+      ],
+      "expected_pairs": 0,
+      "actual_pairs": 0,
+      "record_count": 6
+    },
+    {
+      "case_id": "observed_numeric_zero_preserved_in_test",
+      "passed": true,
+      "expected_issue_codes": [],
+      "actual_issue_codes": [],
+      "expected_pairs": 1,
+      "actual_pairs": 1,
+      "record_count": 6
+    }
+  ],
+  "scope": "Record integrity and range arithmetic on constructed inputs only.",
+  "limit": "Does not establish real preparation-error reduction, deposition quality, provenance or workplace adoption."
+}
