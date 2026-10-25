@@ -2,7 +2,7 @@
 
 **데이터 범주: LITERATURE_BENCHMARK**
 
-OLED 전극과 투명전도막 연구에서 보고한 측정값을 정리했다. the manufacturer 규격이나 작성자의 측정값이 아니며, `FIELD_MEASUREMENT` 또는 A/B 계산에 넣지 않는다. 재료, 적층 구조, 기판, 증착 조건과 측정 정의가 다르므로 합격 기준이나 연구 간 순위로 사용하지 않는다.
+OLED 전극과 투명전도막 연구에서 보고한 측정값을 정리했다. 회사 규격이나 작성자의 측정값이 아니며, `FIELD_MEASUREMENT` 또는 A/B 계산에 넣지 않는다. 재료, 적층 구조, 기판, 증착 조건과 측정 정의가 다르므로 합격 기준이나 연구 간 순위로 사용하지 않는다.
 
 ## 문헌 수치
 
@@ -19,7 +19,7 @@ OLED 전극과 투명전도막 연구에서 보고한 측정값을 정리했다.
 
 Park는 [저자 소속기관의 논문 초록](https://pure.skku.edu/en/publications/transparent-conducting-azo-cosputtered-ito-anode-films-grown-by-a/), Jeong은 출판사 초록과 [저자 소속기관의 초록](https://pure.skku.edu/en/publications/flexible-al-doped-zno-films-grown-on-pet-substrates-using-linear-/)에서 확인했다. Yun은 초록과 본문, Lee는 공개 본문과 대조했다. Jeong의 가시광 평균 투과율을 다른 연구의 550 nm 단일 파장 투과율과 같은 값으로 비교하지 않는다. 면저항과 체적 비저항을 바꾸어 쓰거나 논문별 FoM을 합치지 않는다.
 
-기존 초안의 [Kim et al., 2015](https://doi.org/10.7567/JJAP.54.090301)와 [Choi et al., 2008](https://doi.org/10.1149/1.2979143)는 이번 검토에서 출판사 본문이나 초록을 직접 대조하지 못해 수치표와 워크북에서 제외했다. 이 제외는 출처 접근과 대조 범위에 따른 결정이며 논문의 오류를 판정한 결과는 아니다. 현재 표는 6개 재료 구성과 19개 개별 물성값으로 구성돼 있다.
+추가로 검토한 [Kim et al., 2015](https://doi.org/10.7567/JJAP.54.090301)와 [Choi et al., 2008](https://doi.org/10.1149/1.2979143)는 이번 검토에서 출판사 본문이나 초록을 직접 대조하지 못해 수치표와 워크북에서 제외했다. 이 제외는 출처 접근과 대조 범위에 따른 결정이며 논문의 오류를 판정한 결과는 아니다. 현재 표는 6개 재료 구성과 19개 개별 물성값으로 구성돼 있다.
 
 ## 산포와 계측 해석
 

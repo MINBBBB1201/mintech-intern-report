@@ -1,18 +1,18 @@
-# Manufacturing records before model predictions
+# Record validation and synthetic 4M analysis
 
 ## Manufacturing internship and follow-up engineering project
 
-I completed a one-month manufacturing technology internship at Mintech, supporting OLED deposition-equipment manufacturing. My role was to assist with factory tasks and support OLED deposition-equipment manufacturing under my supervisor's direction.
+During a one-month manufacturing technology internship at Mintech, I helped with factory tasks and supported OLED deposition-equipment manufacturing under my supervisor's direction.
 
 ## My contribution to the follow-up
 
-I supplied the internship account and set the goal of connecting the experience with engineering and AI in a separate report. I used AI tools to develop the supporting documents and software, supplied a reference design, and directed revisions so the report would explain my role alongside the technical results.
+After the internship, I described the work I had done and asked for a report connecting that experience with engineering and AI. I supplied a reference design and directed revisions to the report, including how it explained my role. AI tools helped develop the technical documents and software.
 
-The resulting project asks what records are needed to compare two preparation methods. Its main output is a Python CSV validator, supported by a carrier and witness-coupon checklist, a paired comparison plan and a workbook.
+The project asks which records are needed to compare two preparation methods. Its main output is a Python CSV validator, supported by a carrier and witness-coupon checklist, a paired comparison plan and a workbook.
 
 ## When the tool withholds a comparison
 
-The proposed schema connects a carrier and sample to their preparation conditions and measurement points. Before calculating a difference in thickness range, the validator checks required information, run consistency, matching conditions and the measurement-point set.
+The proposed schema connects a carrier and sample to their preparation conditions and measurement points. The validator checks required information, consistency within each run, matching conditions and the measurement-point set before calculating a difference in thickness range.
 
 One software test changes a measurement-point identifier to P4. Although the two methods still have equal numbers of measurements, their point sets differ. The validator returns `POINT_SET` and withholds the pair. The different locations make the spatial ranges unsuitable for a matched comparison.
 
@@ -35,9 +35,9 @@ A separate pipeline uses 4,000 generated 4M records to explore classification af
 | LogisticRegression | 50 | 119 |
 | LightGBM | 26 | 29 |
 
-LogisticRegression finds more positives while sending more negative cases for inspection. LightGBM produces fewer false alarms and misses more positives. Choosing a model requires the cost of a missed defect and an unnecessary inspection, alongside the evaluation scores.
+LogisticRegression finds more positives while sending more negative cases for inspection. LightGBM produces fewer false alarms and misses more positives. A model choice must account for the costs of missed defects and unnecessary inspections as well as the evaluation scores.
 
-The labels are generated from rules that share variables with the inputs. The exercise tests a reproducible classification workflow; it does not measure defect prediction on company production data.
+The labels are generated from rules that share variables with the inputs. The exercise tests a reproducible classification workflow. It does not measure defect prediction on company production data.
 
 ## How the two parts connect
 
@@ -47,4 +47,4 @@ Record validation determines whether inputs meet declared comparison rules. Mode
 
 The accompanying English engineering report explains the record structure, three validation cases, model errors and proposed field-trial conditions. The package also contains source code, constructed test inputs, saved outputs and execution metadata. The field-record template is blank; the numerical examples are constructed software inputs.
 
-The validator, its test inputs and saved results allow the record-checking rules to be inspected and reproduced.
+The test inputs and saved results are supplied with the validator so that its checks can be reproduced.

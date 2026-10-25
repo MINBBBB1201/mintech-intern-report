@@ -1,6 +1,6 @@
 # Mintech Internship Report
 
-An AI-assisted engineering portfolio following a supervised manufacturing-support internship at Mintech. The project defines carrier and witness-coupon records, validates paired comparisons and demonstrates classification on generated 4M data.
+An engineering portfolio developed after a supervised manufacturing-support internship at Mintech, with AI assistance. The project defines carrier and witness-coupon records, validates paired comparisons and demonstrates classification on generated 4M data.
 
 This is a student portfolio, not an official Mintech publication or a company-endorsed specification. The company name identifies the internship context. Equipment identifiers, exact employment dates, personal evidence and company-internal files are excluded.
 
@@ -13,7 +13,7 @@ This is a student portfolio, not an official Mintech publication or a company-en
 - [AI and machine-learning guide](docs/ai_analysis.md): pipeline, dashboard, model results and reproduction.
 - [Privacy and scope](PRIVACY.md): export exclusions and data categories.
 
-The internship role was supervised manufacturing support. The later project used AI tools for technical drafts, implementation, editing and automated checks. The applicant supplied the internship account, set the engineering-and-AI follow-up goal and directed report revisions. This repository does not claim independent authorship of all code or field effectiveness of the proposed checklist.
+The internship role was supervised manufacturing support. The later project used AI tools for technical drafts, implementation, editing and automated checks. The applicant described the internship work, set the engineering-and-AI follow-up goal and directed revisions to the reports. This repository does not claim independent authorship of all code or field effectiveness of the proposed checklist.
 
 ## Reproduce the record checks
 
@@ -42,6 +42,8 @@ The 4,000 rows in `outputs/4m_quality_analysis_data.csv` are generated. Labels s
 pip install -r code/requirements-report.txt
 python code/build_reports.py
 ```
+
+For an admissions copy, the PDF builder accepts `--applicant` for the name used on the application and `--out` for a separate output directory. Keep that directory outside this checkout. The default reports omit the applicant name for public sharing.
 
 The IBM Plex Sans KR font files are included with their OFL license and source manifest in `assets/fonts/`. The report mark is a project graphic, not an employer logo.
 
