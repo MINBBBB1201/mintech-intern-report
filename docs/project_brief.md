@@ -2,7 +2,7 @@
 
 ## Manufacturing internship and follow-up engineering project
 
-I completed a one-month manufacturing technology internship at an OLED deposition-equipment manufacturer. My role was to assist with factory tasks and support OLED deposition-equipment manufacturing under my supervisor's direction.
+I completed a one-month manufacturing technology internship at Mintech, supporting OLED deposition-equipment manufacturing. My role was to assist with factory tasks and support OLED deposition-equipment manufacturing under my supervisor's direction.
 
 ## My contribution to the follow-up
 

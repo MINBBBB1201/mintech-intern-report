@@ -96,4 +96,4 @@ B에서 ID·좌표·방향 오류가 줄어들면 체크리스트가 준비 누�
 4. 순서·블록 효과를 분리한 뒤 A와 B의 고정점 두께 범위를 비교한다.
 5. 담당 엔지니어가 안전·오염 조건과 현장 적용 여부를 검토한다.
 
-기록에는 [캐리어·쿠폰 기록시트](../templates/field_records.csv)와 캐리어·쿠폰 비교분석 워크북 (omitted from this export)을 사용한다.
+기록에는 [캐리어·쿠폰 기록시트](../templates/field_records.csv)와 [캐리어·쿠폰 비교분석 워크북](../workbooks/carrier_coupon_comparison.xlsx)을 사용한다.

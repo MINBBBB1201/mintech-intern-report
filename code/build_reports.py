@@ -1,4 +1,4 @@
-"""Render only anonymized Markdown sources; no private source files are read."""
+"""Render only privacy-filtered Markdown sources; no private source files are read."""
 from pathlib import Path
 
 from reportlab.lib import colors
@@ -17,9 +17,9 @@ class Report(BaseDocTemplate):
     def __init__(self, path, styles, brief=False):
         super().__init__(str(path), pagesize=A4, leftMargin=15*mm, rightMargin=15*mm,
                          topMargin=29*mm, bottomMargin=20*mm,
-                         title='Manufacturing records | Project brief' if brief else 'Manufacturing records | Engineering report',
+                         title='Mintech Internship | Project brief' if brief else 'Mintech Internship | Engineering report',
                          author='', creator='build_reports.py',
-                         subject='Anonymized AI-assisted record validation and synthetic-data analysis')
+                         subject='Privacy-filtered AI-assisted record validation and synthetic-data analysis')
         self.brief = brief
         self.styles = styles
         self.heading_count = 0
@@ -45,14 +45,14 @@ class Report(BaseDocTemplate):
             draw_mark(canv, x, height-144, 29)
             canv.setFillColor(colors.HexColor(INK))
             canv.setFont('PlexKR-Bold', 18)
-            canv.drawString(x+40, height-141, 'MANUFACTURING RECORDS')
+            canv.drawString(x+40, height-141, 'MINTECH INTERNSHIP REPORT')
             canv.setFillColor(colors.HexColor(MUTED))
             canv.setFont('PlexKR', 10)
-            canv.drawString(x, height-280, 'ANONYMIZED ENGINEERING SUPPLEMENT')
+            canv.drawString(x, height-280, 'STUDENT ENGINEERING PORTFOLIO')
             canv.setFillColor(colors.HexColor(INK))
             canv.setFont('PlexKR-Light', 34)
-            canv.drawString(x, height-336, 'Manufacturing records')
-            canv.drawString(x, height-383, 'before model predictions')
+            canv.drawString(x, height-336, 'Mintech internship')
+            canv.drawString(x, height-383, 'Engineering and AI')
             canv.setFillColor(colors.HexColor(ACCENT))
             canv.setFont('PlexKR-Bold', 20)
             canv.drawString(x, height-434, 'A record-validation project')
@@ -61,12 +61,12 @@ class Report(BaseDocTemplate):
             canv.drawString(x, height-505, 'Supervised manufacturing support and')
             canv.drawString(x, height-525, 'AI-assisted follow-up design and software checks.')
             canv.setFont('PlexKR', 9)
-            canv.drawString(x, height-710, 'Software fixtures and synthetic data | Employer identity omitted')
+            canv.drawString(x, height-710, 'Software fixtures and synthetic data | Student follow-up project')
         else:
             draw_mark(canv, x, height-53, 18)
             canv.setFillColor(colors.HexColor(INK))
             canv.setFont('PlexKR-Bold', 9)
-            canv.drawString(x+25, height-49, 'MANUFACTURING RECORDS')
+            canv.drawString(x+25, height-49, 'MINTECH INTERNSHIP REPORT')
             canv.setFillColor(colors.HexColor(MUTED))
             canv.setFont('PlexKR-Light', 9.5)
             canv.drawRightString(width-self.rightMargin, height-49, 'Project brief' if self.brief else 'Engineering report')
@@ -101,7 +101,7 @@ def main():
         story = [] if brief else [Spacer(1, doc.height-1), PageBreak()]
         story.extend(markdown_flowables(ROOT/'docs'/(filename+'.md'), styles, doc.width))
         doc.multiBuild(story, canvasmaker=canvas.Canvas)
-    print('Built two anonymized PDFs')
+    print('Built two privacy-filtered PDFs')
 
 
 if __name__ == '__main__':

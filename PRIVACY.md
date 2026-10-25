@@ -1,11 +1,13 @@
-# Privacy and evidence scope
+# Public-release scope
 
-This repository is an anonymized export. It contains no employment certificates, identity documents, signatures, company registration documents, private working notes, university choices or application essays. Employer name, workplace location and exact internship dates were removed from the exported reports. The original workbook is excluded to avoid publishing its document metadata or future personal/field inputs.
+The employer name Mintech is retained at the portfolio owner's request to identify the internship. This is the student's internship portfolio and follow-up project, not an official company report, endorsement or approved equipment specification.
 
-Included numerical material consists of code-generated 4M examples, deliberately constructed `SOFTWARE_TEST` fixtures and saved software/model outputs. `templates/field_records.csv` contains a header and no observations. The `FIELD_MEASUREMENT` label is a user declaration, not measurement authentication.
+The export excludes employment certificates, identity documents, signatures, registration documents, workplace location, exact internship dates, private working notes, university choices and application essays. It contains no company production records, approved drawings, actual equipment dimensions or field A/B measurements. The original local portfolio remains separate and unchanged.
 
-The reports retain AI-assistance attribution and distinguish supervised internship work from later development. They do not assert measured preparation-error reduction, film-quality improvement or workplace deployment.
+Numerical files contain generated 4M data, deliberately constructed SOFTWARE_TEST fixtures and saved software/model outputs. The CSV field template is empty. The included workbook has empty field-input areas and separately labelled reconstructed examples. Its XML package was reviewed for identifying text, metadata, macros, embedded objects and external workbook links. It was copied without changing its formulas. A FIELD_MEASUREMENT label is a user declaration, not authentication.
 
-The local source portfolio is preserved separately. Do not copy private source folders or identifying evidence into this checkout. The `.gitignore` rules help prevent accidental additions but do not replace reviewing each staged change.
+The reports retain AI-assistance attribution and distinguish supervised internship work from subsequent development. They do not assert measured preparation-error reduction, film-quality improvement or workplace deployment. Older commits used a generic employer description; they contain the smaller privacy-filtered export, not excluded source material.
 
-IBM Plex fonts remain subject to their included OFL license. No project-wide license has been added.
+Before adding data, review its content, provenance, metadata and authorization for public release. The audit is a bounded check for prohibited files, common secret patterns, links and declared data categories; it is not a guarantee that arbitrary future additions are safe. GitHub account information and normal commit timestamps remain visible if the repository is made public.
+
+IBM Plex fonts retain their OFL license. Literature references retain attribution. No project-wide license is granted, and the project mark is not a company logo.

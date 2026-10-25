@@ -4,6 +4,7 @@ research_notes/
 applications_2027/
 submission/
 *.xlsx
+!workbooks/carrier_coupon_comparison.xlsx
 *.docx
 *.pem
 *.key
