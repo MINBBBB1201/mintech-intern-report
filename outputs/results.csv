@@ -1,0 +1,3 @@
+model,roc_auc,pr_auc,f1_defect,tn,fp,fn,tp
+LogisticRegression,0.9166,0.4604,0.4367,821,119,10,50
+LightGBM,0.9035,0.4849,0.4522,911,29,34,26

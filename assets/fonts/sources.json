@@ -1,0 +1,26 @@
+[
+  {
+    "file": "IBMPlexSansKR-Regular.ttf",
+    "source": "https://raw.githubusercontent.com/IBM/plex/master/packages/plex-sans-kr/fonts/complete/ttf/hinted/IBMPlexSansKR-Regular.ttf",
+    "sha256": "193af4c0c4f979251edd13708ea4c3eb4d0d07f9352b3d2a58b43b042767183b",
+    "bytes": 2533776
+  },
+  {
+    "file": "IBMPlexSansKR-Bold.ttf",
+    "source": "https://raw.githubusercontent.com/IBM/plex/master/packages/plex-sans-kr/fonts/complete/ttf/hinted/IBMPlexSansKR-Bold.ttf",
+    "sha256": "2aa49909a6dae0591efa1cc892bf99a2556b3b56fbcb639439240010518548ae",
+    "bytes": 2478544
+  },
+  {
+    "file": "IBMPlexSansKR-Light.ttf",
+    "source": "https://raw.githubusercontent.com/IBM/plex/master/packages/plex-sans-kr/fonts/complete/ttf/hinted/IBMPlexSansKR-Light.ttf",
+    "sha256": "7ef4bf17644646859b3284aace6693ab3884fb9370d92b82d7c7e0648cc2cee9",
+    "bytes": 2541392
+  },
+  {
+    "file": "OFL.txt",
+    "source": "https://raw.githubusercontent.com/IBM/plex/master/LICENSE.txt",
+    "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da",
+    "bytes": 4456
+  }
+]
