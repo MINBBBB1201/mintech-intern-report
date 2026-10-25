@@ -7,5 +7,6 @@
 *.svg text eol=lf
 *.csv -text
 *.pdf binary
+*.xlsx binary
 *.ttf binary
 assets/fonts/OFL.txt -text -whitespace

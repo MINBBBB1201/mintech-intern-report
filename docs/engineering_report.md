@@ -2,7 +2,7 @@
 
 ## Supervised manufacturing support
 
-I completed a one-month manufacturing technology internship at an OLED deposition-equipment manufacturer. I began by helping with factory tasks and then joined practical work under my supervisor's direction.
+I completed a one-month manufacturing technology internship at Mintech, supporting OLED deposition-equipment manufacturing. I began by helping with factory tasks and then joined practical work under my supervisor's direction.
 
 ## My contribution after the internship
 
@@ -101,7 +101,7 @@ The generated label uses lot, shift, rework, waiting time and noise. Some of the
 
 ## Completed outputs
 
-This GitHub export provides the proposed record structure, a comparison plan, the CSV validator and the synthetic-data classification pipeline. The original portfolio workbook is omitted from this export. Software-test fixtures and model evaluation outputs accompany the code.
+This GitHub export provides the proposed record structure, a comparison plan, the CSV validator and the synthetic-data classification pipeline. The portfolio workbook is included with empty field inputs and separately labelled examples. Software-test fixtures and model evaluation outputs accompany the code.
 
 The workbook was previously checked through 47 recalculation assertions in Artifact Tool, including statistics and invalid-input handling. Four Streamlit AppTest scenarios checked dashboard filters and sample conditions. These checks did not cover native Excel behaviour or a browser layout review.
 
@@ -130,7 +130,7 @@ The validator and its test script use Python's standard library. The model pipel
 - [Constructed test inputs](../outputs/software_validation/test_cases.csv): SOFTWARE_TEST fixtures.
 - [Model results](../outputs/results.csv) and [execution metadata](../outputs/run_metadata.json): confusion matrices and run conditions.
 - [Detailed comparison plan](comparison_plan.md): Korean technical supporting document.
-- [Checklist](checklist.md) and workbook (omitted from this GitHub export): proposed recording and calculation tools.
+- [Checklist](checklist.md) and [workbook](../workbooks/carrier_coupon_comparison.xlsx): proposed recording and calculation tools.
 - [OLED literature notes](literature_notes.md): published context, separate from company measurements.
 
 ## Measurement references

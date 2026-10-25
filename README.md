@@ -1,12 +1,16 @@
-# Manufacturing records portfolio
+# Mintech Internship Report
 
-An anonymized, AI-assisted engineering supplement based on supervised manufacturing-support experience. The project defines carrier and witness-coupon records, validates paired comparisons and demonstrates classification on generated 4M data.
+An AI-assisted engineering portfolio following a supervised manufacturing-support internship at Mintech. The project defines carrier and witness-coupon records, validates paired comparisons and demonstrates classification on generated 4M data.
+
+This is a student portfolio, not an official Mintech publication or a company-endorsed specification. The company name identifies the internship context. Equipment identifiers, exact employment dates, personal evidence and company-internal files are excluded.
 
 ## Read the project
 
 - [Project brief](reports/project_brief.pdf): a short introduction to the role, record checks and analysis.
 - [Engineering report](reports/engineering_report.pdf): design rules, test cases and interpretation.
 - [Editable report](docs/engineering_report.md) and [worked software example](docs/validation_example.md).
+- [Complete contents and coverage](docs/contents.md), including Korean reports, the workbook and technical interview notes.
+- [AI and machine-learning guide](docs/ai_analysis.md): pipeline, dashboard, model results and reproduction.
 - [Privacy and scope](PRIVACY.md): export exclusions and data categories.
 
 The internship role was supervised manufacturing support. The later project used AI tools for technical drafts, implementation, editing and automated checks. The applicant supplied the internship account, set the engineering-and-AI follow-up goal and directed report revisions. This repository does not claim independent authorship of all code or field effectiveness of the proposed checklist.
@@ -32,7 +36,7 @@ streamlit run code/app/dashboard.py
 
 The 4,000 rows in `outputs/4m_quality_analysis_data.csv` are generated. Labels share variables with model inputs, so evaluation demonstrates a classification workflow, not independent production-defect prediction. Saved package versions and split conditions are in `outputs/run_metadata.json`.
 
-## Rebuild the anonymized PDFs
+## Rebuild the privacy-filtered PDFs
 
 ```bash
 pip install -r code/requirements-report.txt
@@ -43,4 +47,4 @@ The IBM Plex Sans KR font files are included with their OFL license and source m
 
 ## 한국어 안내
 
-이 저장소는 제조 지원 인턴십 이후의 기록 설계와 소프트웨어 검증을 담은 익명화 사본이다. 회사명, 근무지와 정확한 근무일, 증빙 원본, 지원 학교별 문구와 비공개 초안은 포함하지 않았다. 현장 측정 CSV는 빈 양식이며 수치 예제는 소프트웨어 시험 또는 생성 데이터다. 원본 제출 자료와 별도로 관리한다.
+민테크 제조 지원 인턴십과 이후의 엔지니어링·AI 프로젝트를 정리한 학생 포트폴리오다. 기록 검증 코드, 4M 합성 데이터 분석, 두 분류모델의 결과, 대시보드, 비교분석 엑셀, 한국어·영어 설명을 포함한다. 현장 역할과 인턴십 이후 개발은 구분했다. 회사 내부 자료와 개인정보, 정확한 근무일, 지원 대학별 문구는 제외했다. 회사의 공식 보고서나 승인된 장비 사양서는 아니다.
