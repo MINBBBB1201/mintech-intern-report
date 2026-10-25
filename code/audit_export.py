@@ -47,6 +47,10 @@ def main():
     for filename, key in [('record_validation.py', 'validator_sha256'), ('verify_records.py', 'verification_script_sha256')]:
         digest = hashlib.sha256((ROOT/'code'/filename).read_bytes()).hexdigest()
         assert digest == results[key], f'Stale saved results: {filename}'
+    fonts = json.loads((ROOT/'assets/fonts/sources.json').read_text(encoding='utf-8'))
+    for item in fonts:
+        digest = hashlib.sha256((ROOT/'assets/fonts'/item['file']).read_bytes()).hexdigest()
+        assert digest == item['sha256'], f'Font or license differs from source manifest: {item["file"]}'
     print(f'Export structure and evidence checks passed: {reviewed} files')
 
 
