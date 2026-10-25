@@ -1,5 +1,6 @@
 """Render only privacy-filtered Markdown sources; no private source files are read."""
 from pathlib import Path
+import argparse
 
 from reportlab.lib import colors
 from reportlab.lib.pagesizes import A4
@@ -14,13 +15,14 @@ ROOT = Path(__file__).resolve().parent.parent
 
 
 class Report(BaseDocTemplate):
-    def __init__(self, path, styles, brief=False):
+    def __init__(self, path, styles, brief=False, applicant=''):
         super().__init__(str(path), pagesize=A4, leftMargin=15*mm, rightMargin=15*mm,
                          topMargin=29*mm, bottomMargin=20*mm,
                          title='Mintech Internship | Project brief' if brief else 'Mintech Internship | Engineering report',
-                         author='', creator='build_reports.py',
+                         author=applicant, creator='build_reports.py',
                          subject='Privacy-filtered AI-assisted record validation and synthetic-data analysis')
         self.brief = brief
+        self.applicant = applicant
         self.styles = styles
         self.heading_count = 0
         frame = Frame(self.leftMargin, self.bottomMargin, self.width, self.height,
@@ -60,6 +62,10 @@ class Report(BaseDocTemplate):
             canv.setFont('PlexKR', 11)
             canv.drawString(x, height-505, 'Supervised manufacturing support and')
             canv.drawString(x, height-525, 'AI-assisted follow-up design and software checks.')
+            if self.applicant:
+                canv.setFillColor(colors.HexColor(INK))
+                canv.setFont('PlexKR', 13)
+                canv.drawString(x, height-580, self.applicant)
             canv.setFont('PlexKR', 9)
             canv.drawString(x, height-710, 'Software fixtures and synthetic data | Student follow-up project')
         else:
@@ -76,12 +82,19 @@ class Report(BaseDocTemplate):
             canv.setFont('PlexKR', 10.5)
             canv.drawRightString(width-self.rightMargin, 28,
                                  str(canv.getPageNumber() if self.brief else canv.getPageNumber()-1))
+            if self.applicant:
+                canv.setFont('PlexKR', 9)
+                canv.drawString(x, 28, self.applicant)
         canv.restoreState()
 
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--out', type=Path, default=ROOT/'reports')
+    parser.add_argument('--applicant', default='', help='Optional name for a private submission copy')
+    args = parser.parse_args()
     register_fonts()
-    destination = ROOT/'reports'
+    destination = args.out
     destination.mkdir(exist_ok=True)
     for filename, brief in [('engineering_report', False), ('project_brief', True)]:
         styles = make_styles()
@@ -97,7 +110,7 @@ def main():
         for key in ['table', 'table_header']:
             styles[key].fontSize = 9
             styles[key].leading = 13.5
-        doc = Report(destination/(filename+'.pdf'), styles, brief=brief)
+        doc = Report(destination/(filename+'.pdf'), styles, brief=brief, applicant=args.applicant)
         story = [] if brief else [Spacer(1, doc.height-1), PageBreak()]
         story.extend(markdown_flowables(ROOT/'docs'/(filename+'.md'), styles, doc.width))
         doc.multiBuild(story, canvasmaker=canvas.Canvas)

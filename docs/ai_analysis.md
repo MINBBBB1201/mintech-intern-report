@@ -11,12 +11,14 @@ Two uses of AI appear in this project. AI tools assisted the technical documents
 
 The saved run uses 4,000 generated rows, 240 positives, seed 42 and a stratified 75/25 split. The held-out set contains 1,000 rows and 60 positives. At threshold 0.5:
 
-| Model | ROC AUC | PR AUC | F1, positive class | TP | FP | FN | TN |
+| Model | ROC AUC | Average precision (AP) | F1, positive class | TP | FP | FN | TN |
 |---|---|---|---|---|---|---|---|
 | Logistic Regression | 0.9166 | 0.4604 | 0.4367 | 50 | 119 | 10 | 821 |
 | LightGBM | 0.9035 | 0.4849 | 0.4522 | 26 | 29 | 34 | 911 |
 
 In this run LightGBM produced fewer false positives and missed more positives at the selected threshold. These metrics come from synthetic labels that share variables with the model inputs. They demonstrate implementation and a threshold trade-off, not independent evidence of production-defect prediction. The model pipeline does not consume the carrier/coupon field template.
+
+The saved column `pr_auc` contains `average_precision_score`, reported here as AP. It is not a trapezoidal area under the precision-recall curve.
 
 ## Reproduce
 
