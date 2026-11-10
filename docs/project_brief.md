@@ -1,50 +1,21 @@
-# Record validation and synthetic 4M analysis
+# Manufacturing records for consistent comparisons
 
-## Manufacturing internship and follow-up engineering project
+## Mintech internship and follow-up engineering project
 
-During a one-month manufacturing technology internship at Mintech, I helped with factory tasks and supported OLED deposition-equipment manufacturing under my supervisor's direction.
+During a one-month manufacturing technology internship at Mintech, I assisted with factory tasks and supported OLED deposition-equipment manufacturing under my supervisor's direction.
 
-## My contribution to the follow-up
+## A record-validation project
 
-After the internship, I described the work I had done and asked for a report connecting that experience with engineering and AI. I supplied a reference design and directed revisions to the report, including how it explained my role. AI tools helped develop the technical documents and software.
+The follow-up project organizes preparation and measurement records so two methods can be compared under matched conditions. Its outputs are a proposed carrier and witness-coupon checklist, a paired comparison plan, a workbook and a Python CSV validator.
 
-The project asks which records are needed to compare two preparation methods. Its main output is a Python CSV validator, supported by a carrier and witness-coupon checklist, a paired comparison plan and a workbook.
+The proposed record connects each carrier and sample to its preparation conditions and measurement points. Before calculating a difference in thickness range, the validator checks required fields, consistency within a run, matching comparison conditions and the measurement-point set.
 
-## When the tool withholds a comparison
+## Comparison rules
 
-The proposed schema connects a carrier and sample to their preparation conditions and measurement points. The validator checks required information, consistency within each run, matching conditions and the measurement-point set before calculating a difference in thickness range.
+The proposed A method follows the existing approved preparation procedure. B adds the checklist. Preparation errors are counted once per run. Film thickness is recorded at fixed points, and its range is the maximum minus the minimum across the same point set.
 
-One software test changes a measurement-point identifier to P4. Although the two methods still have equal numbers of measurements, their point sets differ. The validator returns `POINT_SET` and withholds the pair. The different locations make the spatial ranges unsuitable for a matched comparison.
-
-Another test repeats a run's preparation-error count across three point rows. The validator counts that value once per run. In the constructed input, A's two errors remain two, instead of becoming six through row-wise addition.
-
-The package includes the record schema, checklist, paired comparison plan, executable validator and saved test fixtures. All 55 configured software tests produced the expected issue codes and accepted-pair counts.
+If the two methods use different measurement-point sets, the validator withholds the comparison. If a run-level preparation-error count appears on several point rows, it is counted once for that run.
 
 ## Scope
 
-The follow-up design, implementation and automated checks used AI tools after the internship. The demonstrated results are software tests and a separate synthetic-data analysis; field A/B observations are not included.
-
-# What the AI exercise adds
-
-## Compare the cost of different mistakes
-
-A separate pipeline uses 4,000 generated 4M records to explore classification after a dataset has been structured. The evaluation set contains 60 positive and 940 negative cases, with a decision threshold of 0.5.
-
-| Model | Positives found / 60 | False alarms / 940 |
-|---|---|---|
-| LogisticRegression | 50 | 119 |
-| LightGBM | 26 | 29 |
-
-LogisticRegression finds more positives while sending more negative cases for inspection. LightGBM produces fewer false alarms and misses more positives. A model choice must account for the costs of missed defects and unnecessary inspections as well as the evaluation scores.
-
-The labels are generated from rules that share variables with the inputs. The exercise tests a reproducible classification workflow. It does not measure defect prediction on company production data.
-
-## How the two parts connect
-
-Record validation determines whether inputs meet declared comparison rules. Model evaluation asks what can be inferred from a dataset and which mistakes it makes. The current checklist and classifier remain separate implementations. Connecting them would require traceable run-level records, independently observed labels and features available at a defined prediction time.
-
-## Evidence to inspect
-
-The accompanying English engineering report explains the record structure, three validation cases, model errors and proposed field-trial conditions. The package also contains source code, constructed test inputs, saved outputs and execution metadata. The field-record template is blank; the numerical examples are constructed software inputs.
-
-The test inputs and saved results are supplied with the validator so that its checks can be reproduced.
+The checklist and comparison plan are proposals for a supervised field trial. The package does not report field A/B observations or claim that the checklist improved manufacturing outcomes. Equipment constraints, measurement repeatability, matched conditions and recorded trial order would need review before a field evaluation.
