@@ -20,7 +20,7 @@ class Report(BaseDocTemplate):
                          topMargin=29*mm, bottomMargin=20*mm,
                          title='Mintech Internship | Project brief' if brief else 'Mintech Internship | Engineering report',
                          author=applicant, creator='build_reports.py',
-                         subject='Privacy-filtered AI-assisted record validation and synthetic-data analysis')
+                         subject='Privacy-filtered manufacturing record validation report')
         self.brief = brief
         self.applicant = applicant
         self.styles = styles
@@ -54,20 +54,20 @@ class Report(BaseDocTemplate):
             canv.setFillColor(colors.HexColor(INK))
             canv.setFont('PlexKR-Light', 34)
             canv.drawString(x, height-336, 'Mintech internship')
-            canv.drawString(x, height-383, 'Engineering and AI')
+            canv.drawString(x, height-383, 'Manufacturing records')
             canv.setFillColor(colors.HexColor(ACCENT))
             canv.setFont('PlexKR-Bold', 20)
             canv.drawString(x, height-434, 'A record-validation project')
             canv.setFillColor(colors.HexColor(MUTED))
             canv.setFont('PlexKR', 11)
             canv.drawString(x, height-505, 'Supervised manufacturing support and')
-            canv.drawString(x, height-525, 'AI-assisted follow-up design and software checks.')
+            canv.drawString(x, height-525, 'paired comparison design and record validation.')
             if self.applicant:
                 canv.setFillColor(colors.HexColor(INK))
                 canv.setFont('PlexKR', 13)
                 canv.drawString(x, height-580, self.applicant)
             canv.setFont('PlexKR', 9)
-            canv.drawString(x, height-710, 'Software fixtures and synthetic data | Student follow-up project')
+            canv.drawString(x, height-710, 'Proposed record design | Student follow-up project')
         else:
             draw_mark(canv, x, height-53, 18)
             canv.setFillColor(colors.HexColor(INK))
